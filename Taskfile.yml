@@ -2,5 +2,10 @@ version: '3'
 
 tasks:
   upgrade:
-    cmds:
-      - bun upgrade
+    - bun upgrade
+  serve:
+    - bun --inspect server.ts
+  test:
+    - bun test --coverage
+  example-shell:
+    - bun example-sh.ts
